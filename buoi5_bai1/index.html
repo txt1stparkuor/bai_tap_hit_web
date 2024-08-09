@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1%;
+            border: 1px outset black;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .tron img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            margin-left: 10px;
+            top: 30px;
+        }
+
+        .tam {
+            margin-left: 130px;
+        }
+
+        .tam h1 {
+            font-style: italic;
+            color: rgba(169, 169, 34, 0.697);
+        }
+
+        .event {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px 130px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        .anh1,
+        .anh2,
+        .anh3 {
+            width: 450px;
+            height: 300px;
+            display: flex;
+            justify-content: flex-end;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .anh1 div{
+            height: 25px;
+            color: white;
+            background-color: rgb(123, 191, 21);
+        }
+        .anh2 div{
+            height: 25px;
+            color: white;
+            background-color: rgb(123, 191, 21);
+        }
+        .anh3 div{
+            height: 25px;
+            color: white;
+            background-color: rgb(123, 191, 21);
+        }
+        .anh1 {
+            background-image: url(https://booking.pystravel.vn/uploads/posts/albums/462/c8f505a713695d3f18f1e4de703ffb48.jfif);
+        }
+
+        .anh2 {
+            background-image: url(https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/436258121_1026514245963727_726329079803136611_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEhN2fmVkbzPH4EB1Rnx-YCexS57o9wytV7FLnuj3DK1cu3DMeycmB7FVKmWLr7OcqUIig0dfYcw5DKnVdKQPXW&_nc_ohc=y8hw9Nyvg1QQ7kNvgEZBx4d&_nc_ht=scontent.fhan12-1.fna&oh=00_AYDy1-LdvAVDC20eN9H05IdHIKdXmWg_CsV8FH6V5qS6ZQ&oe=66BA69AF);
+
+        }
+        .anh3 {
+            background-image: url(https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/316165010_639736937974795_278857393854038565_n.jpg?stp=dst-jpg_p526x395&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFvCYi4Onb6CSDijr0e1GcE6lLyjaMBJxHqUvKNowEnEZhUd0br4cj-cjvxwDHfjVrNDg39NWSGPISrvDj7Vg6N&_nc_ohc=VoXi-3oQa-UQ7kNvgGtWWh9&_nc_ht=scontent.fhan12-1.fna&oh=00_AYA66dhS0FZuaCNOVFY3pGfEcwuyvVxHeg6t5GxjuDfZIQ&oe=66BA7C2D);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: orange;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="left">
+            <h2>CLB TIN HỌC</h2>
+            <h3>Đại Học Công Nghiệp Hà Nội</h3>
+        </div>
+        <div class="right">
+            <h3>Activity</h3>
+            <h3>Learning</h3>
+            <h3>Event</h3>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="tron">
+            <img src="https://th.bing.com/th/id/OIP.m61GdM2H4vTyl3wxdu753gAAAA?w=325&h=280&rs=1&pid=ImgDetMain"
+                alt="tron">
+        </div>
+        <div class="anh">
+            <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/453749530_1081121393836345_5677193696328816366_n.png?stp=dst-png_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeH7yda4xedwqyBBzBMX1Y7fni0nqeMe6zOeLSep4x7rMztuXbsxybvUbExK3OkniX0JsJexfQ4dYBwM3MDSBDAM&_nc_ohc=f5z_zRb3fb8Q7kNvgED63Fk&_nc_ht=scontent.fhan17-1.fna&oh=00_AYDzJfb8tcya5_K0KuumGsCQzrBaBVZ5smZ1QkG7BsVWUw&oe=66BA5C53"
+                alt="hit">
+        </div>
+    </div>
+    <div class="tam">
+        <h1>Activity</h1>
+    </div>
+    <div class="event">
+        <div class="anh1">
+            <div>Du lịch năm 2019</div>
+        </div>
+        <div class="anh2">
+            <div>Tech Club Championship</div>
+        </div>
+        <div class="anh3">
+            <div>Offline CTV Hana 2024</div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>@Copy right in 2024</h3>
+    </div>
+</body>
+
+</html>
