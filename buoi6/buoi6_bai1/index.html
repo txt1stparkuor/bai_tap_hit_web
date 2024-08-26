@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .outer {
+            display: grid;
+            color: white;
+            grid-template-columns: repeat(9,1fr);
+            grid-template-rows: repeat(4,100px);
+            grid-gap: 10px;
+            grid-template-areas:
+            "   container1       container1        container1        container1        container1        container1        container1        container1        container1 "
+            "   container2       container2       container2       container2       container2       container2       container3       container3       container3"
+            "   container2       container2       container2       container2       container2       container2       container3       container3       container3"
+            "   container4       container4       container4       container4       container4       container4       container4       container4       container4";
+            padding: 20px;
+        }
+        .container1 {
+            grid-area:container1;    
+            background-color:  #b33434;
+        }
+        .container2 {
+            display: grid;
+            background-color: #34a8a5;
+            padding: 20px;
+            grid-area: container2;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(2,75px);
+            grid-gap: 20px;
+            grid-template-areas: 
+            "container5 container5  container5  container5  container5  container5"
+            "container6 container6  container6  container6  container7  container7";
+        }
+        .container5 {
+            grid-area: container5;
+            background-color: #df3f3f;
+        }
+        .container6 {
+            grid-area: container6;
+            background-color: #3c8bb2;
+        }
+        .container7 {
+            grid-area: container7;
+            background-color: #df3f3f;
+        }
+        .container3 {
+            grid-area: container3;
+            background-color: #2b997c;
+        }
+        .container4 {
+            grid-area: container4;
+            background-color: #6b478f;
+        }
+        .container1,.container3,.container4,.container5,.container6,.container7 {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="container1">1</div>
+        <div class="container2">
+            <div class="container5">5</div>
+            <div class="container6">6</div>
+            <div class="container7">7</div>
+        </div>
+        <div class="container3">3</div>
+        <div class="container4">4</div>
+    </div>
+</body>
+</html>
